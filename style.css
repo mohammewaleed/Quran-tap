@@ -18,6 +18,8 @@ ol {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--default-padding) * 2);
 }
 
 body {
@@ -63,13 +65,26 @@ img {
   column-gap: calc(var(--default-padding) * 2);
   align-items: center;
 }
+.section_gap {
+  row-gap: calc(var(--default-padding) * 4);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--default-padding) / 2);
+}
 .main-head {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
+}
+.features-title {
+  font-size: 2.4rem;
 }
 .description {
   color: var(--color-grayish-blue);
   font-size: 1.4rem;
 }
+
 /* End Global styles */
 
 /* Start header */
@@ -119,6 +134,8 @@ img {
 
 .buttons {
   margin-top: var(--default-padding);
+  display: flex;
+  gap: var(--default-padding);
 }
 .exe-link {
   padding: 1.2rem 2.4rem;
@@ -131,7 +148,6 @@ img {
 .chrome {
   background-color: var(--color-soft-blue);
   color: var(--color-off-white);
-  margin-right: var(--default-padding);
 }
 
 .Edge {
