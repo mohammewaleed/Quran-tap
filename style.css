@@ -198,7 +198,7 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 600px) {
-  .Features_two {
+  .two {
     grid-row: 3;
   }
 }
