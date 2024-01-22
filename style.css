@@ -146,7 +146,7 @@ input[type="checkbox"] {
 
 .nav-list {
   display: flex;
-  gap: 2rem;
+  gap: var(--default-padding);
 }
 
 .links {
@@ -206,8 +206,7 @@ input[type="checkbox"] {
 
 /* Start download section */
 .download {
-  grid-template-columns: 1fr;
-  row-gap: 2rem;
+  row-gap: var(--default-padding);
 }
 .download-text {
   grid-column: 1/-1;
@@ -231,7 +230,6 @@ input[type="checkbox"] {
   }
 }
 .box {
-  grid-column: 1/-1;
   background-color: #fff;
   border-radius: var(--default-radius);
   box-shadow: 0 0.4rem 0.8rem 0.2rem #0000001a;
@@ -246,6 +244,9 @@ input[type="checkbox"] {
 @media (max-width: 600px) {
   .box {
     width: 100%;
+  }
+  .boxes {
+    grid-template-columns: 1fr;
   }
 }
 
