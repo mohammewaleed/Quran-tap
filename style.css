@@ -112,7 +112,8 @@ img {
 
 .nav-list {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: var(--default-padding) ;
 }
 
 .links {
